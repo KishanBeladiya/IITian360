@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="NIT Surat B.Tech. Admission 2020. SVNIT Surat Info, Connectivity, Ranking, Courses Offered, Cutoff, Fee Structure &amp; Placements 2020.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media screen{
+        body{
+            margin: -1px;
+            padding: -1px;
+        }
+        .back{
+            position:absolute;
+            top:0%;
+            height:vh;
+            width:100vw;
+            opacity:90%;
+            z-index:-1;
+        }
+        .cover{
+            position:absolute;
+            top:0%;
+            left:39vw;
+            background-image: linear-gradient(to left, black,white);
+            height:50.6vw;
+            width:61vw;
+            opacity:90%;
+            background-color:rgba(0, 0, 0, 0.4);
+            opacity:0.4;
+            border: none;
+        }
+        .header{
+            position: absolute;
+            top:3.5%;
+            margin-left:25vw;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.5));
+            box-shadow: 10px 1px 7px rgba(0,0,0,0.2);
+            z-index: 1;
+            height:3.5vw;
+            width:68vw;
+            border: none;
+            border-radius: 100px;
+            transition: 0.3s ease-in-out;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color:rgb(0, 28, 112);
+            transition: 0.5s ease-out;
+        }
+        .nav-bar a:hover{
+            color:white;
+            font-size: 2vw;
+            background-color: royalblue;
+            padding:0.25vw;
+            border-top-left-radius:1vw;
+            border-bottom-right-radius:1vw;
+        }
+        .nav-bar{
+            position: relative;
+            font-size:1.6vw;
+            font-family:Alegreya;
+            margin-top:1.3%;
+            margin-left:4vw;
+            transition:0.25s ease-in-out;
+        }
+        .logo-1{
+            position: absolute;
+            top:20%;
+            left:-22vw;
+            font-size:3.5vw;
+            text-shadow: 2px 2px 6px black;
+            transition:0.25s ease-in-out;
+        }
+        .logo-2{
+            position: absolute;
+            top:20%;
+            left:-10.8vw;
+            color: royalblue;
+            font-size:3.5vw;
+            text-shadow: 2px 2px 6px royalblue;
+            transition:0.25s ease-in-out;
+        }
+        .search{
+            position: absolute;
+            top:7.5vw;
+            left:-22vw;
+            height:2vw;
+            width:13vw;
+            box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4);
+            border: none;
+            border-radius:0.3vw;
+            font-size:1.5vw;
+            transition:0.25s ease-in-out;
+        }
+        .but-1{
+            position: absolute;
+            top:7.5vw;
+            left:-9vw;
+            height:2vw;
+            width:5vw;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 0.3vw;
+            color:white;
+            background-color:royalblue;
+            font-size: 1vw;
+            text-align-last: center;
+            transition:0.25s ease-in-out;
+        }
+        .social img{
+            height:3vw;
+            width:3vw;
+            transition: 0.6s ease-out;
+            border:0.1vw solid white;
+            background-color:royalblue;
+            border-radius:1vw;
+            padding:0.2vw;
+            margin:0.08vw;
+        }
+        .social{
+            position:fixed;
+            top:20%;
+            left:95vw;
+            transition: 0.3s ease-out;
+        }
+        .facebook-division:hover{
+            margin-left:-3vw;
+        }
+        .instagram-division:hover{
+            margin-left:-3vw;
+        }
+        .twitter-division:hover{
+            margin-left:-3vw;
+        }
+        .linkedin-division:hover{
+            margin-left:-3vw;
+        }
+        .college-logo{
+            position:absolute;
+            top:24vw;
+            left:10.5vw;
+            padding: 0.3vw;
+            border:0.3vw solid rgba(65, 105, 225,0.5);
+            border-radius:1vw;
+            transition:0.25s ease-in-out;
+            
+        }
+        .svnit-logo{
+            height:13vw;
+            width:13vw;
+            border-radius:1vw;
+            transition:0.25s ease-in-out;
+        }
+        .college-name{
+            position:absolute;
+            top:16vw;
+            left:5vw;
+            font-size:4.5vw;
+            color:black;
+            padding: 1vw;
+            border-radius:1vw;
+            background-image: linear-gradient(to left,white,rgba(65, 105, 225,0.8));
+            transition:0.25s ease-in-out;
+        }
+        .logo-content{
+            border:0.5px solid rgba(0, 0, 0, 0.1);
+            height:25vw;
+            width:27vw;
+            margin-top:15vw;
+            margin-left: 4vw;
+            box-shadow: 5px 3px 10px rgba(0, 0, 0,0.5);
+            border-top-right-radius:3vw;
+            border-bottom-left-radius:3vw;
+            transition:0.25s ease-in-out;
+        }
+        .college-address p{
+            position: absolute;
+            top:20vw;
+            left:33vw;
+            font-size:1.8vw;
+            transition:0.25s ease-in-out;
+        }
+        .college-address address{
+            position: absolute;
+            top:30vw;
+            left:36vw;
+            font-size:1.5vw;
+            transition:0.25s ease-in-out;
+        }
+        .college-address strong{
+            position: absolute;
+            top:27vw;
+            left:40vw;
+            font-size:2vw;
+            transition:0.25s ease-in-out;
+        }
+        
+    }
+</style>
+<body>
+    <img class="back" src="back.png">
+    <div class="cover"></div>
+    <div class="header">
+        <nav class="nav-bar">
+            <a href="">News</a>&nbsp;&nbsp;&nbsp;
+            <a href="">Collage</a>&nbsp;&nbsp;&nbsp;
+            <a href="">Exams</a>&nbsp;&nbsp;&nbsp;
+            <a href="">Addmission</a>&nbsp;&nbsp;&nbsp;
+            <a href="">Tools</a>&nbsp;&nbsp;&nbsp;
+            <a href="">Forum</a>&nbsp;&nbsp;&nbsp;
+            <a href="">Counciling-Live</a>&nbsp;&nbsp;&nbsp;
+        </nav>
+        <h1><b class="logo-1">IITian</b><b class="logo-2">360</b></h1>
+        <input type="search" class="search" placeholder="search">&nbsp;&nbsp;
+        <button type="search" class="but-1">Search</button>
+    </div>
+    <div class="social">
+        <img src="facebook.png" class="facebook-division"><br>
+        <img src="instagram.png" class="instagram-division"><br>
+        <img src="twitter2.png" class="twitter-division"><br>
+        <img src="linkedin.png" class="linkedin-division"><br>
+    </div>
+    <div class="logo-content">
+        <strong class="college-name">NIT Surat</strong>
+        <div class="college-logo">
+            <img src="svnit-logo.png" class="svnit-logo">
+        </div>
+    </div>
+    <div class="college-address">
+        <p>&nbsp;&nbsp; Sardar vallabhabhai patel<br>National Intitite of Technology</p>
+        <strong>Address</strong>
+        <address>Surat, gujarat 395006,<br>&nbsp;adhavalines,India</address>
+    </div>
+</body>
+</html>
